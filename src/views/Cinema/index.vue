@@ -1,13 +1,20 @@
 <template>
-	<div>
-		hello Cinema
+	<div id="main">
+		<Header/>
+		<TabBar/>
 	</div>
 </template>
 
 <script>
-	export default{
-		
-	}
+	import Header from '@/components/Header/index.vue';
+	import TabBar from '@/components/TabBar/index.vue';
+		export default{
+			name:"Cinema",
+			components:{
+				Header,
+				TabBar
+			}	
+		}
 </script>
 
 <style>
